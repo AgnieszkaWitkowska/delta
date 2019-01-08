@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+int a;
+    int c;
+    int b;
+    int delta;
+    double x;
+    double x1;
+    double x2;
+    
+    printf("Ten program sluzy do obliczania delty i wynikow rownania kwadratowego \n");
+    printf("Podaj zmienna a rownania kwadratowego: \n");
+    scanf("%d", &a);
+    printf ("Podaj zmienna b rownania kwadratowego:\n");
+    scanf("%d", &b);
+    printf("Podaj zmienna c rownania kwadratowego:\n");
+    scanf("%d", &c);
+    
+    delta=b*b-4*a*c;
+    printf("Delta dla podanych zmiennych to: %d\n", delta);
+
+    if (delta < 0)
+     { printf("Rownanie kwadratowe nie ma rozwiazania\n");}
+    if (delta == 0)
+    {x= -b/(2*a);
+         
+        printf("wynik rownania kwadratowego to: %lf \n", x);}
+    if (delta>1)
+    
+{
+        x1= ((-b) - (sqrt(delta)))/(2*a);
+        
+        x2= ((-b)+ (sqrt(delta)))/(2*a);
+        
+        printf("wynik rownania kwadratowego to:%lf\n", x1);
+        printf("wynik rownania kwadratowego to:%lf\n", x2);
+        
+        }        
+return 0;
+    
+    
+    
+}
